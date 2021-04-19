@@ -21,13 +21,13 @@ The big list of Repos, there are more but start with these. Some lines taken fro
 
 ```
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt install build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git libboost-all-dev libssl-dev libboost-tools-dev libdb++-dev libevent-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libevent-dev libboost-all-dev libdb++-dev libssl-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev lib32gcc-4.8-dev g++-arm-linux-gnueabihf gcc-aarch64-linux-gnu nsis libgmp3-dev
-sudo apt install g++-mingw-w64-x86-64
-sudo apt install software-properties-common
-sudo apt install g++-mingw-w64-i686 mingw-w64-i686-dev
+sudo apt-get upgrade -y
+sudo apt install -y build-essential libtool autotools-dev automake pkg-config bsdmainutils curl git libboost-all-dev libssl-dev libboost-tools-dev libdb++-dev libevent-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libevent-dev libboost-all-dev libdb++-dev libssl-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev lib32gcc-4.8-dev g++-arm-linux-gnueabihf gcc-aarch64-linux-gnu nsis libgmp3-dev
+sudo apt install g++-mingw-w64-x86-64 -y
+sudo apt install software-properties-common -y
+sudo apt install g++-mingw-w64-i686 mingw-w64-i686-dev -y
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 ```
 
 ### For MacOS and ARM Builds - Need these
@@ -98,7 +98,7 @@ sudo apt-get update
 sudo apt-get install -y libdb4.8-dev libdb4.8++-dev
 sudo apt-get install -y qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev \
     libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev \
-    libssl-dev
+    libssl1.0-dev
 ```
 
 Then run these commands in the coins base directory:
